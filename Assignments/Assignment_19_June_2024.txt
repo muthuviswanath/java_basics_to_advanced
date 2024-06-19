@@ -1,0 +1,38 @@
+Assignment Questions:
+
+1. Get a number as input from the user and print 
+		Positive if it is a positive number
+		Negative if it is a negative number
+2. Get three numbers from the user and Find the Biggest number out of it
+3. Get two values from the user and print the following accordingly
+
+		Input:
+		Enter the day of the week(1-7): 4
+		Enter the month of the year(1-12): 7
+
+		Output:
+		It is Wednesday in the month of July.
+4. Get two double numbers from the user and print the following:
+
+		If both the number are same: Welcome
+		If they are different: Thank you, Bye
+
+5. Get the value of an year from the user and check whether it is a leap year or not.
+
+6. Display the first 10 natural numbers
+7. Get a value from the user (1-10) and display the sum of all natural numbers between 1
+     and the value given by the user.
+
+	     Input:
+	     Enter the value for n: 5
+	     Sum of natural numbers: 15
+8. Display the multiplication table of 5 for 10 terms
+
+	1 x 5 = 5
+	2 x 5 = 10
+	3 x 5 = 15
+	.
+	.
+	.
+	.
+	10 x 5 = 50

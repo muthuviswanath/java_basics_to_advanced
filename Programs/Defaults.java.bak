@@ -1,0 +1,21 @@
+class Defaults 
+{
+	byte a;
+	short b;
+	int c;
+	long d;
+	float e;
+	double f;
+	char g;
+	boolean h;
+	String i;
+	public static void main(String[] args) 
+	{
+		Defaults def = new Defaults();
+		System.out.println(def.a);System.out.println(def.b);
+		System.out.println(def.c);System.out.println(def.d);
+		System.out.println(def.e);System.out.println(def.f);
+		System.out.println(def.g);System.out.println(def.h);
+		System.out.println(def.i);
+	}
+}
