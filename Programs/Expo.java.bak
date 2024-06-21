@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Expo 
+{
+	int power(int base,  int exponent){
+		for (int i=exponent;i>=1 ;i--)
+		{
+			base = base * base;
+		}
+		return base;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the value for base:  ");
+		int base = s.nextInt();
+		System.out.println("Enter the value for exponent:  ");
+		int exponent = s.nextInt();
+		Expo e = new Expo();
+		int res = e.power(base,exponent);
+		System.out.println(res);
+	}
+}

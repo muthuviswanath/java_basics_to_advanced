@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class CharacterCheck 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a character: ");
+		char c = scan.next().charAt(0);
+		if(c == 'a'|| c=='A' || c== 'e' || c=='E' || c== 'i' || c== 'I' || c=='o' || c== 'O' || c== 'u' || c== 'U'){
+			System.out.println (c + " is vowel.");
+		}
+		else if((int)c <65 ||  (int)c > 90 || (int) c< 97 || (int) c >122){
+			System.out.println (c + " is a special character.");
+		}
+		else{
+			System.out.println (c + " is a consonant.");
+		}
+	}
+}
