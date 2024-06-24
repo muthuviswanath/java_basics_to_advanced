@@ -1,0 +1,19 @@
+class ArrayCreation 
+{
+	public static void main(String[] args) 
+	{
+		// Using early initialization
+		int[] my_numbers = {10,20,30,40,50};
+
+		//traverse the array
+		for (int index=0;index<5 ;index++ )
+		{
+		System.out.println(my_numbers[index]);
+		}
+
+		//for each or enhanced for loop
+		for(int elements:my_numbers){
+			System.out.println(elements)
+		}
+	}
+}
