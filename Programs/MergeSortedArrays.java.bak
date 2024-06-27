@@ -1,0 +1,55 @@
+import java.util.Scanner;
+class MergeSortedArrays
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the number of elements to be stored in the array");
+		int ele_count = scan.nextInt();
+		int [] a = new int[ele_count];
+		for (int i=0;i<ele_count ; i++)
+		{
+			a[i] = scan.nextInt();
+		}
+		ArrayOperations ar = new ArrayOperations();
+	
+		int[] farray = ar.sortArray(a);
+		System.out.println("Enter the number of elements to be stored in the array");
+		int element_count = scan.nextInt();
+		int [] b = new int[element_count];
+		for (int i=0;i<element_count ; i++)
+		{
+			b[i] = scan.nextInt();
+		}
+		int[] sarray = ar.sortArray(b);
+		int[] c = new int[farray.length + sarray.length];
+		// merge sorted arrays:
+				int i=0, j=0, k=0;
+		// value of i and j must be equal -> both the arrays will be iterated for common length of elements
+
+		// a = [12,23,34]  c = [12,23,25,34,36,56] 
+		// b = [25,36,56]
+while(i<farray.length && j<sarray.length){//i =3, j =1
+			if(farray[i]<sarray[j]){
+			c[k++] = a[i++];
+			}
+			else{
+			c[k++] = sarray[j++];	
+			}
+			
+		}
+		while(i<farray.length){//i =3, j =1
+			c[k++] = farray[i++];
+		}
+		while(j<sarray.length){//i =3, j =1
+			c[k++] = sarray[j++];
+		}
+
+		System.out.println("Elements of First Array");
+		ar.printArray(farray);
+		System.out.println("Elements of Second Array");
+		ar.printArray(sarray);
+		System.out.println("Elements of Merged Array");
+		ar.printArray(c);
+}
+}
